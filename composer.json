@@ -1,0 +1,44 @@
+{
+    "name": "petrushka/seller-auth-client",
+    "description": "\u0410\u0432\u0442\u043e\u0440\u0438\u0437\u0430\u0446\u0438\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u043d\u044b\u0445 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u0439",
+    "keywords": [
+        "openapitools",
+        "openapi-generator",
+        "openapi",
+        "php",
+        "sdk",
+        "rest",
+        "api"
+    ],
+    "homepage": "https://openapi-generator.tech",
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "OpenAPI-Generator contributors",
+            "homepage": "https://openapi-generator.tech"
+        }
+    ],
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.2 || ^7.0",
+        "guzzlehttp/psr7": "^1.6.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.4",
+        "squizlabs/php_codesniffer": "~2.6",
+        "friendsofphp/php-cs-fixer": "~2.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ensi\\AdminAuthClient\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ensi\\AdminAuthClient\\": "test/"
+        }
+    }
+}
