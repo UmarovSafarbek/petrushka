@@ -58,7 +58,6 @@ class UserReadonlyProperties implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'id' => 'int',
-        'seller_id' => 'int', 
         'full_name' => 'string',
         'short_name' => 'string',
         'created_at' => '\DateTime',
@@ -72,7 +71,6 @@ class UserReadonlyProperties implements ModelInterface, ArrayAccess
       */
     protected static $openAPIFormats = [
         'id' => null,
-        'seller_id' => null,
         'full_name' => null,
         'short_name' => null,
         'created_at' => 'date-time',
@@ -86,7 +84,6 @@ class UserReadonlyProperties implements ModelInterface, ArrayAccess
       */
     protected static $openAPINullables = [
         'id' => false,
-        'seller_id' => false,
         'full_name' => false,
         'short_name' => false,
         'created_at' => false,
@@ -181,7 +178,6 @@ class UserReadonlyProperties implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'id' => 'id',
-        'seller_id' => 'seller_id',
         'full_name' => 'full_name',
         'short_name' => 'short_name',
         'created_at' => 'created_at',
@@ -195,7 +191,6 @@ class UserReadonlyProperties implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'id' => 'setId',
-        'seller_id' => 'setSellerId',
         'full_name' => 'setFullName',
         'short_name' => 'setShortName',
         'created_at' => 'setCreatedAt',
@@ -209,7 +204,6 @@ class UserReadonlyProperties implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'id' => 'getId',
-        'seller_id' => 'getSellerId',
         'full_name' => 'getFullName',
         'short_name' => 'getShortName',
         'created_at' => 'getCreatedAt',
@@ -277,7 +271,6 @@ class UserReadonlyProperties implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->setIfExists('id', $data, null);
-        $this->setIfExists('seller_id', $data, null);
         $this->setIfExists('full_name', $data, null);
         $this->setIfExists('short_name', $data, null);
         $this->setIfExists('created_at', $data, null);
@@ -346,21 +339,6 @@ class UserReadonlyProperties implements ModelInterface, ArrayAccess
         $this->container['id'] = $id;
 
         return $this;
-    }
-
-    /**
-     * Get seller_id
-     *
-     * @return int|null
-     */
-    public function getSellerId()
-    {
-        return $this->container['seller_id'];
-    }
-
-    public function setSellerId($seller_id)
-    {
-        $this->container['seller_id'] = $seller_id;
     }
 
     /**

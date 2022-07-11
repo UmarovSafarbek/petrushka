@@ -38,6 +38,7 @@ use Ensi\AdminAuthClient\ApiException;
 use Ensi\AdminAuthClient\Configuration;
 use Ensi\AdminAuthClient\HeaderSelector;
 use Ensi\AdminAuthClient\ObjectSerializer;
+use Illuminate\Support\Facades\Log;
 
 /**
  * UsersApi Class Doc Comment

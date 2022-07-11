@@ -45,21 +45,21 @@ class User implements ModelInterface, ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'User';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'id' => 'int',
-        'seller_id' => 'int',
         'full_name' => 'string',
+        'seller_id' => 'int',
         'short_name' => 'string',
         'created_at' => '\DateTime',
         'updated_at' => '\DateTime',
@@ -75,14 +75,14 @@ class User implements ModelInterface, ArrayAccess
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPIFormats = [
-        'id' => null,   
-        'seller_id' => null, 
+        'id' => null,
         'full_name' => null,
+        'seller_id' => null,
         'short_name' => null,
         'created_at' => 'date-time',
         'updated_at' => 'date-time',
@@ -98,14 +98,14 @@ class User implements ModelInterface, ArrayAccess
     ];
 
     /**
-      * Array of nullable properties. Used for (de)serialization
-      *
-      * @var boolean[]
-      */
+     * Array of nullable properties. Used for (de)serialization
+     *
+     * @var boolean[]
+     */
     protected static $openAPINullables = [
         'id' => false,
-        'seller_id' => false,
         'full_name' => false,
+        'seller_id' => false,
         'short_name' => false,
         'created_at' => false,
         'updated_at' => false,
@@ -121,10 +121,10 @@ class User implements ModelInterface, ArrayAccess
     ];
 
     /**
-      * If a nullable field gets set to null, insert it here
-      *
-      * @var boolean[]
-      */
+     * If a nullable field gets set to null, insert it here
+     *
+     * @var boolean[]
+     */
     protected $openAPINullablesSetToNull = [];
 
     /**
@@ -147,7 +147,7 @@ class User implements ModelInterface, ArrayAccess
         return self::$openAPIFormats;
     }
 
-        /**
+    /**
      * Array of property to nullable mappings. Used for (de)serialization
      *
      * @return array
@@ -169,7 +169,7 @@ class User implements ModelInterface, ArrayAccess
 
     public function setOpenAPINullablesSetToNull($nullablesSetToNull)
     {
-        $this->openAPINullablesSetToNull=$nullablesSetToNull;
+        $this->openAPINullablesSetToNull = $nullablesSetToNull;
         return $this;
     }
 
@@ -208,8 +208,8 @@ class User implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'id' => 'id',
-        'seller_id' => 'seller_id', 
         'full_name' => 'full_name',
+        'seller_id' => 'seller_id',
         'short_name' => 'short_name',
         'created_at' => 'created_at',
         'updated_at' => 'updated_at',
@@ -231,8 +231,8 @@ class User implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'id' => 'setId',
-        'setter_id' => 'setSellerId',
         'full_name' => 'setFullName',
+        'seller_id' => 'setSellerId',
         'short_name' => 'setShortName',
         'created_at' => 'setCreatedAt',
         'updated_at' => 'setUpdatedAt',
@@ -254,8 +254,8 @@ class User implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'id' => 'getId',
-        'seller_id' => 'getSellerId',
         'full_name' => 'getFullName',
+        'seller_id' => 'getSellerId',
         'short_name' => 'getShortName',
         'created_at' => 'getCreatedAt',
         'updated_at' => 'getUpdatedAt',
@@ -311,9 +311,6 @@ class User implements ModelInterface, ArrayAccess
         return self::$openAPIModelName;
     }
 
-    
-
-    
 
     /**
      * Associative array for storing property values
@@ -411,23 +408,21 @@ class User implements ModelInterface, ArrayAccess
         return $this;
     }
 
-    /**
-     * Get seller_id
-     *
-     * @return int|null
-     */
+
     public function getSellerId()
     {
         return $this->container['seller_id'];
     }
 
+
     public function setSellerId($seller_id)
     {
         $this->container['seller_id'] = $seller_id;
+        return $this;
     }
 
     /**
-    * Gets full_name
+     * Gets full_name
      *
      * @return string|null
      */
