@@ -23,11 +23,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://gitlab.com/greensight/ensi/admin-auth-client-php.git"
+      "url": "https://github.com/umarov-safar/petrushka.git"
     }
   ],
   "require": {
-    "greensight/ensi/admin-auth-client-php": "*@dev"
+    "petrushka/seller-auth-client-php": "*@dev"
   }
 }
 ```
